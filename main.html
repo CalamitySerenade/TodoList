@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do list page display</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <div id="logo">
+                <img src="assets/logo.png" alt="CheckMate logo">
+                <h2>CheckMate</h2>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <a href="settings.html"><li><h3>Settings</h3></li></a>
+                    <li><h3>Signout</h3></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="taskCreate">
+            <h2>Add New Task</h2>
+            <form>
+                <input type="text" id="taskName" class="standardInpt" placeholder="Enter Task Name">
+                <input type="date" id="ETC" class="standardInpt" placeholder="Enter Expected Due Date">
+                <input type="text" id="status" class="standardInpt" placeholder="Enter Current Status (If Not Complete)">
+                <input type="text" id="status" class="standardInpt" placeholder="Enter Priority Filling">
+                <input type="button" id="submit" class="standardBtn" value="Submit New Task">
+            </form>
+        </div>
+        <div class="taskDisplay">
+        <h2>Current Tasks:</h2>
+            <ul id="list">                
+            </ul>
+            </div>
+        </div>
+        <div class="taskManager">
+            <h2>Manage Tasks</h2>
+            <form>
+                <input type="text" id="TaskID" class="standardInpt" placeholder="Enter Task ID">
+                <input type="button" id="complete" class="standardBtn" value="Mark As Complete">
+                <input type="button" id="complete" class="standardBtn" value="Mark As In Progress">
+                <input type="button" id="complete" class="standardBtn" value="Delete Task">
+            </form>
+        </div>
+    </body>
+</html>
