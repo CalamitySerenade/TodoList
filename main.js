@@ -23,6 +23,26 @@ async function displayAllTasks(){
         console.error("Error with Task Display", error);
     }
 }
+displayAllTasks();
+
+const completeButton=document.getElementById("complete");
+const progressButton=document.getElementById("progress");
+completeButton.addEventListener("click", async()=>{
+    const taskID=document.getElementById("taskID").value;
+    const taskRef=doc(db, "tasks", taskID)
+    await updateDoc(taskRef, {
+        status:"Completed"
+    })
+    alert("Task has been completed")
+})
+progressButton.addEventListener("click", async()=>{
+    const taskID=document.getElementById("taskID").value;
+    const taskRef=doc(db, "tasks", taskID)
+    await updateDoc(taskRef, {
+        status:"In Progress"
+    })
+    alert("Task is In Progress")
+})
 
 const deleteButton=document.getElementById("delete");
 deleteButton.addEventListener("click", async()=>{
