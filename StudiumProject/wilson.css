@@ -22,8 +22,37 @@ form{
     flex-direction:column;
     width:100%;
 }
+input{
+    border-radius:10px;
+    height:25px;
+    text-align:center;
+}
 button{
     background-color:#415B41;
     border-radius:15px;
     margin-top:15px;
+    border-style:none;
+    width:100px;
+    height:30px;
+    align-self: center;
+    color:white;
+}
+nav{
+    background-color: #9aab89;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+nav h3{
+    color:white;
+}
+#studyboards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:15px;
 }
