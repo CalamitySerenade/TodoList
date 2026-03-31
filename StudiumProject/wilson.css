@@ -36,6 +36,7 @@ button{
     height:30px;
     align-self: center;
     color:white;
+    cursor:pointer;
 }
 nav{
     background-color: #9aab89;
