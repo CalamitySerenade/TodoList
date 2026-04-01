@@ -110,6 +110,12 @@ p{
     }
  }
 
+ li{
+    list-style-type: none;
+    text-decoration:underline;
+    padding:3px;
+    
+ }
  
 body{
     background-color: #D5DDCD;
